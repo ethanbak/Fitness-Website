@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Fitness and Meal Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tailored Fitness & Nutrition Planner</h1>
+            <p>Achieve your goals with precision and ease</p>
+        </div>
+    </header>
+    
+    <section class="form-section">
+        <div class="container">
+            <h2>Start Building Your Plan</h2>
+            <form id="fitnessForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+
+                <label for="ethnicity">Ethnicity:</label>
+                <select id="ethnicity">
+                    <option value="caucasian">Caucasian</option>
+                    <option value="african">African</option>
+                    <option value="asian">Asian</option>
+                    <option value="hispanic">Hispanic</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="activity">Weekly Activity Level:</label>
+                <select id="activity">
+                    <option value="sedentary">Sedentary (0-1 days)</option>
+                    <option value="light">Light (2-3 days)</option>
+                    <option value="moderate">Moderate (4-5 days)</option>
+                    <option value="active">Active (6-7 days)</option>
+                </select>
+
+                <label for="timeline">Timeline (weeks):</label>
+                <input type="number" id="timeline" required>
+
+                <label for="schedule">Preferred Workout Times:</label>
+                <textarea id="schedule" placeholder="E.g., Mornings on Monday, Evenings on Wednesday"></textarea>
+                
+                <button type="submit">Generate Plan</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="container" id="results">
+            <!-- Dynamic results will populate here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
